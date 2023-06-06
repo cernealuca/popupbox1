@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mouse leave Popupbox</title>
+        <link rel="stylesheet" href="popupbox.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+        </div>
+        
+        <div id="modelBox">
+            <img src="images/chipulmeu.png" width="100%">
+            <div class="offer-text">
+                <h2>Dont forget to Hire!</h2>
+                <small> And give me an opportunity to grow :D</small>
+                <p>If you have second taughts...</p>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Don't</button>
+                </form>
+            </div>
+            <img src="images/close.png" class="close-icon" onclick="closeModel()">
+        </div>
+
+        <script>
+            let modelBox = document.getElementById("modelBox");
+
+            document.onmouseleave = function(){
+                modelBox.style.display = "block";
+            }
+
+            function closeModel(){
+                modelBox.style.display = "none";
+            }
+
+        </script>
+
+    </body>
+</html>
